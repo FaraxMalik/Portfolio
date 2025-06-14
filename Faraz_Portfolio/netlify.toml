@@ -1,9 +1,6 @@
 [build]
-  publish = "./"
+  publish = "Faraz_Portfolio/"
   
-[build.environment]
-  NODE_VERSION = "18"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
