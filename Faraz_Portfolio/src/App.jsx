@@ -1,5 +1,12 @@
 import './App.css'
 import Navbar from './Navbar'
+// Import project images as modules
+import Babu1 from './assets/Images/Babu1.png'
+import Babu2 from './assets/Images/Babu2.png'
+import N1 from './assets/Images/N_1.png'
+import N20 from './assets/Images/N_20.png'
+import P1 from './assets/Images/P_1.png'
+import P2 from './assets/Images/P_2.png'
 
 function App() {
   return (
@@ -107,7 +114,7 @@ function App() {
               <div className="project-card">
                 <div className="project-images">
                   <img 
-                    src="/images/Babu1.png" 
+                    src={Babu1}
                     alt="Babu Technicians Dashboard" 
                     className="project-image main"
                     onError={(e) => {
@@ -116,7 +123,7 @@ function App() {
                     }}
                   />
                   <img 
-                    src="/images/Babu2.png" 
+                    src={Babu2}
                     alt="Babu Technicians Services" 
                     className="project-image secondary"
                     onError={(e) => {
@@ -144,7 +151,7 @@ function App() {
               <div className="project-card">
                 <div className="project-images">
                   <img 
-                    src="/images/N_1.png" 
+                    src={N1}
                     alt="Niagara Falls App Home" 
                     className="project-image main"
                     onError={(e) => {
@@ -153,7 +160,7 @@ function App() {
                     }}
                   />
                   <img 
-                    src="/images/N_20.png" 
+                    src={N20}
                     alt="Niagara Falls App Features" 
                     className="project-image secondary"
                     onError={(e) => {
@@ -181,7 +188,7 @@ function App() {
               <div className="project-card">
                 <div className="project-images">
                   <img 
-                    src="/images/P_1.png" 
+                    src={P1}
                     alt="Google Ads Dashboard" 
                     className="project-image main"
                     onError={(e) => {
@@ -190,7 +197,7 @@ function App() {
                     }}
                   />
                   <img 
-                    src="/images/P_2.png" 
+                    src={P2}
                     alt="Google Ads Analytics" 
                     className="project-image secondary"
                     onError={(e) => {
