@@ -1,14 +1,6 @@
 node_modules/
-npm-debug.log*
-.DS_Store
-*.log
 package*.json
-vite.config.*
-*.config.js
-*.config.ts
+*.config.*
 dist/
 src/
-build/
-.next/
-.nuxt/
-.cache/ 
+build/ 
