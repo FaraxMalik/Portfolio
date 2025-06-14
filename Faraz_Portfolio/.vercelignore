@@ -1,0 +1,9 @@
+node_modules
+npm-debug.log*
+.DS_Store
+*.log
+package.json
+package-lock.json
+vite.config.*
+dist/
+src/ 
