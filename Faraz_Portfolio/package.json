@@ -1,0 +1,9 @@
+{
+  "name": "static-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'No build needed for static site'",
+    "dev": "echo 'Static site - open index.html'",
+    "start": "echo 'Static site deployed'"
+  }
+} 
