@@ -1,0 +1,12 @@
+# Development files
+.DS_Store
+*.log
+*.tmp
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+README.md
+DEPLOYMENT.md 
