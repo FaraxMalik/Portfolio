@@ -1,5 +1,9 @@
 {
   "version": 2,
-  "public": true,
-  "name": "faraz-portfolio"
+  "builds": [
+    {
+      "src": "**/*",
+      "use": "@vercel/static"
+    }
+  ]
 } 
