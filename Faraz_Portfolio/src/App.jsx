@@ -1,12 +1,5 @@
-import './App.css'
-import Navbar from './Navbar'
-// Import project images as modules
-import Babu1 from './assets/Images/Babu1.png'
-import Babu2 from './assets/Images/Babu2.png'
-import N1 from './assets/Images/N_1.png'
-import N20 from './assets/Images/N_20.png'
-import P1 from './assets/Images/P_1.png'
-import P2 from './assets/Images/P_2.png'
+import './App.css';
+import Navbar from './Navbar';
 
 function App() {
   return (
@@ -114,21 +107,21 @@ function App() {
               <div className="project-card">
                 <div className="project-images">
                   <img 
-                    src={Babu1}
+                    src="/images/Babu1.png" 
                     alt="Babu Technicians Dashboard" 
                     className="project-image main"
+                    onLoad={(e) => e.target.style.opacity = '1'}
                     onError={(e) => {
-                      console.log('Image failed to load:', e.target.src);
-                      e.target.style.display = 'none';
+                      e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3Ctext x='150' y='100' text-anchor='middle' dy='.3em' font-family='Arial' font-size='14' fill='%23666'%3EBabu Technicians%3C/text%3E%3C/svg%3E";
                     }}
                   />
                   <img 
-                    src={Babu2}
+                    src="/images/Babu2.png" 
                     alt="Babu Technicians Services" 
                     className="project-image secondary"
+                    onLoad={(e) => e.target.style.opacity = '1'}
                     onError={(e) => {
-                      console.log('Image failed to load:', e.target.src);
-                      e.target.style.display = 'none';
+                      e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23ffe0d6'/%3E%3Ctext x='150' y='100' text-anchor='middle' dy='.3em' font-family='Arial' font-size='14' fill='%23ff6b35'%3EBabu Services%3C/text%3E%3C/svg%3E";
                     }}
                   />
                 </div>
@@ -151,21 +144,21 @@ function App() {
               <div className="project-card">
                 <div className="project-images">
                   <img 
-                    src={N1}
+                    src="/images/N_1.png" 
                     alt="Niagara Falls App Home" 
                     className="project-image main"
+                    onLoad={(e) => e.target.style.opacity = '1'}
                     onError={(e) => {
-                      console.log('Image failed to load:', e.target.src);
-                      e.target.style.display = 'none';
+                      e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3Ctext x='150' y='100' text-anchor='middle' dy='.3em' font-family='Arial' font-size='14' fill='%23666'%3ENiagara Falls%3C/text%3E%3C/svg%3E";
                     }}
                   />
                   <img 
-                    src={N20}
+                    src="/images/N_20.png" 
                     alt="Niagara Falls App Features" 
                     className="project-image secondary"
+                    onLoad={(e) => e.target.style.opacity = '1'}
                     onError={(e) => {
-                      console.log('Image failed to load:', e.target.src);
-                      e.target.style.display = 'none';
+                      e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23ffe0d6'/%3E%3Ctext x='150' y='100' text-anchor='middle' dy='.3em' font-family='Arial' font-size='14' fill='%23ff6b35'%3EDjango App%3C/text%3E%3C/svg%3E";
                     }}
                   />
                 </div>
@@ -188,30 +181,30 @@ function App() {
               <div className="project-card">
                 <div className="project-images">
                   <img 
-                    src={P1}
+                    src="/images/P_1.png" 
                     alt="Google Ads Dashboard" 
                     className="project-image main"
+                    onLoad={(e) => e.target.style.opacity = '1'}
                     onError={(e) => {
-                      console.log('Image failed to load:', e.target.src);
-                      e.target.style.display = 'none';
+                      e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3Ctext x='150' y='100' text-anchor='middle' dy='.3em' font-family='Arial' font-size='14' fill='%23666'%3EGoogle Ads%3C/text%3E%3C/svg%3E";
                     }}
                   />
                   <img 
-                    src={P2}
+                    src="/images/P_2.png" 
                     alt="Google Ads Analytics" 
                     className="project-image secondary"
+                    onLoad={(e) => e.target.style.opacity = '1'}
                     onError={(e) => {
-                      console.log('Image failed to load:', e.target.src);
-                      e.target.style.display = 'none';
+                      e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23ffe0d6'/%3E%3Ctext x='150' y='100' text-anchor='middle' dy='.3em' font-family='Arial' font-size='14' fill='%23ff6b35'%3EAnalytics%3C/text%3E%3C/svg%3E";
                     }}
                   />
                 </div>
                 <div className="project-content">
-                  <h3 className="project-title">Google Ads Campaigns</h3>
+                  <h3 className="project-title">Google Ads Campaign Management</h3>
                   <p className="project-tech">Google Ads • Digital Marketing • Analytics</p>
                   <p className="project-description">
                     Strategic Google Ads campaign management delivering measurable results for clients. 
-                    Specialized in keyword research, ad optimization, and conversion tracking for maximum ROI.
+                    Specialized in keyword research, ad optimization, conversion tracking, and ROI maximization.
                   </p>
                   <div className="project-links">
                     <a href="mailto:faraxmalikk@gmail.com" className="project-link">
@@ -262,4 +255,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
