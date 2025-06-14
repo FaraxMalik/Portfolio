@@ -106,8 +106,24 @@ function App() {
               {/* Babu Technicians */}
               <div className="project-card">
                 <div className="project-images">
-                  <img src="/images/Babu1.png" alt="Babu Technicians 1" className="project-image main" />
-                  <img src="/images/Babu2.png" alt="Babu Technicians 2" className="project-image secondary" />
+                  <img 
+                    src="/images/Babu1.png" 
+                    alt="Babu Technicians Dashboard" 
+                    className="project-image main"
+                    onError={(e) => {
+                      console.log('Image failed to load:', e.target.src);
+                      e.target.style.display = 'none';
+                    }}
+                  />
+                  <img 
+                    src="/images/Babu2.png" 
+                    alt="Babu Technicians Services" 
+                    className="project-image secondary"
+                    onError={(e) => {
+                      console.log('Image failed to load:', e.target.src);
+                      e.target.style.display = 'none';
+                    }}
+                  />
                 </div>
                 <div className="project-content">
                   <h3 className="project-title">Babu Technicians</h3>
@@ -127,8 +143,24 @@ function App() {
               {/* Niagara Falls */}
               <div className="project-card">
                 <div className="project-images">
-                  <img src="/images/N_1.png" alt="Niagara Falls 1" className="project-image main" />
-                  <img src="/images/N_20.png" alt="Niagara Falls 2" className="project-image secondary" />
+                  <img 
+                    src="/images/N_1.png" 
+                    alt="Niagara Falls App Home" 
+                    className="project-image main"
+                    onError={(e) => {
+                      console.log('Image failed to load:', e.target.src);
+                      e.target.style.display = 'none';
+                    }}
+                  />
+                  <img 
+                    src="/images/N_20.png" 
+                    alt="Niagara Falls App Features" 
+                    className="project-image secondary"
+                    onError={(e) => {
+                      console.log('Image failed to load:', e.target.src);
+                      e.target.style.display = 'none';
+                    }}
+                  />
                 </div>
                 <div className="project-content">
                   <h3 className="project-title">Niagara Falls Django App</h3>
@@ -148,8 +180,24 @@ function App() {
               {/* Google Ads Campaigns */}
               <div className="project-card">
                 <div className="project-images">
-                  <img src="/images/P_1.png" alt="Google Ads Campaign 1" className="project-image main" />
-                  <img src="/images/P_2.png" alt="Google Ads Campaign 2" className="project-image secondary" />
+                  <img 
+                    src="/images/P_1.png" 
+                    alt="Google Ads Dashboard" 
+                    className="project-image main"
+                    onError={(e) => {
+                      console.log('Image failed to load:', e.target.src);
+                      e.target.style.display = 'none';
+                    }}
+                  />
+                  <img 
+                    src="/images/P_2.png" 
+                    alt="Google Ads Analytics" 
+                    className="project-image secondary"
+                    onError={(e) => {
+                      console.log('Image failed to load:', e.target.src);
+                      e.target.style.display = 'none';
+                    }}
+                  />
                 </div>
                 <div className="project-content">
                   <h3 className="project-title">Google Ads Campaigns</h3>
